@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="374" id="lPi-iG-dRr"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kosofo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBG-77-56J">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kosovo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBG-77-56J">
                                 <rect key="frame" x="122.5" y="254" width="169" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="169" id="K2q-5q-tEU"/>
@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="274" id="IBl-Zo-twb"/>
                                     <constraint firstAttribute="width" constant="374" id="nBQ-Oc-Dw0"/>
                                 </constraints>
-                                <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
+                                <string key="text">The Council of Europe has been supporting Kosovo* towards the advancement of its reform agenda through co-operation activities since 1999, functioning in full compliance with the United Nations Security Council Resolution 1244</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
