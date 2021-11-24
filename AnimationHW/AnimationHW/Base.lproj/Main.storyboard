@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cr8" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-pC-BPP">
+                                <rect key="frame" x="20" y="72" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8va-tS-mIo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cristiano Ronaldo " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzO-oz-YW2">
+                                <rect key="frame" x="20" y="421" width="242.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SUB-nn-O9z">
+                                <rect key="frame" x="20" y="477" width="374" height="241"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Cristiano Ronaldo, in full Cristiano Ronaldo dos Santos Aveiro, (born February 5, 1985, Funchal, Madeira, Portugal), Portuguese football (soccer) forward he is greatest player of his generation and all generation. ... Originally a right-winger, he developed into a forward with a free-reined attacking style and now he is the best player of all time (GOAT).</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SUB-nn-O9z" firstAttribute="top" secondItem="IzO-oz-YW2" secondAttribute="bottom" constant="19" id="0kA-Le-xnh"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="leading" secondItem="IzO-oz-YW2" secondAttribute="leading" id="CRi-Il-yyf"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="Dge-fy-6Gi"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GHy-pV-rwC"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="trailing" secondItem="SUB-nn-O9z" secondAttribute="trailing" id="Vf1-H8-Esw"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="leading" secondItem="SUB-nn-O9z" secondAttribute="leading" id="W1A-ei-Wz5"/>
+                            <constraint firstItem="IzO-oz-YW2" firstAttribute="top" secondItem="rVU-pC-BPP" secondAttribute="bottom" constant="49" id="dLv-7O-IKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SUB-nn-O9z" secondAttribute="bottom" constant="144" id="nmU-Oe-uxK"/>
+                            <constraint firstItem="rVU-pC-BPP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wnI-bg-tYk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rVU-pC-BPP" id="iZZ-Oa-Z3z"/>
+                        <outlet property="labelView" destination="IzO-oz-YW2" id="SIT-AQ-frR"/>
+                        <outlet property="textView" destination="SUB-nn-O9z" id="9V0-eu-q7E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cr8" width="612" height="408"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
