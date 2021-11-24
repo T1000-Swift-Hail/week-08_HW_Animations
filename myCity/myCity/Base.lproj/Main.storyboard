@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zg3-kl-ELA">
+                                <rect key="frame" x="0.0" y="69" width="414" height="793"/>
+                                <connections>
+                                    <segue destination="6Gw-dq-QdT" kind="embed" id="aSn-DS-2XG"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzb-Kj-q43">
+                                <rect key="frame" x="0.0" y="30" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Future Cities" id="azF-KU-dY7"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yzb-Kj-q43" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9QP-7i-pdn"/>
+                            <constraint firstItem="zg3-kl-ELA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Apv-4Q-9z5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zg3-kl-ELA" secondAttribute="trailing" id="PsA-Ng-7MT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zg3-kl-ELA" secondAttribute="bottom" id="TZZ-4U-5sK"/>
+                            <constraint firstItem="yzb-Kj-q43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xok-6h-GVI"/>
+                            <constraint firstItem="zg3-kl-ELA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="g35-6c-myz"/>
+                            <constraint firstItem="yzb-Kj-q43" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="qib-HU-NvH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="XcN-0D-ndP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="65.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rER-WF-I7F">
+            <objects>
+                <viewController id="6Gw-dq-QdT" customClass="ViewController" customModule="myCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OsA-UA-iib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alula" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-a9-8tK">
+                                <rect key="frame" x="0.0" y="100" width="414" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="1eP-NI-Fuw"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X8s-4K-Aqa">
+                                <rect key="frame" x="30" y="382" width="354" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="oIm-Oj-olV"/>
+                                </constraints>
+                                <string key="text">Is one of the oldest cities in the Arabian Peninsula and home to Hegra, a UNESCO World Heritage site. 
+
+A land rich in historical, geological and geographical significance, this ancient city, once at the crossroads of The Silk Road and The Incense Route, has only recently been re-discovered by the world.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7w-j3-SXH">
+                                <rect key="frame" x="213" y="602" width="171" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="afA-92-80g"/>
+                                    <constraint firstAttribute="height" constant="31" id="voy-Az-KNZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="More Information"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlUla, The World's Masterpiece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRU-VS-9NY">
+                                <rect key="frame" x="20" y="64" width="294.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ebh-pa-3R1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="X8s-4K-Aqa" secondAttribute="trailing" constant="10" id="0fY-V9-hIi"/>
+                            <constraint firstItem="iRU-VS-9NY" firstAttribute="leading" secondItem="OsA-UA-iib" secondAttribute="leadingMargin" id="43a-Fa-cot"/>
+                            <constraint firstItem="M7w-j3-SXH" firstAttribute="top" secondItem="X8s-4K-Aqa" secondAttribute="bottom" constant="20" id="5Nl-ty-SNm"/>
+                            <constraint firstItem="EwN-a9-8tK" firstAttribute="top" secondItem="OsA-UA-iib" secondAttribute="top" constant="100" id="7d9-71-cGw"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iRU-VS-9NY" secondAttribute="trailing" constant="20" symbolic="YES" id="8GH-oC-Ygh"/>
+                            <constraint firstItem="X8s-4K-Aqa" firstAttribute="top" secondItem="EwN-a9-8tK" secondAttribute="bottom" constant="30" id="AmY-2g-LZs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M7w-j3-SXH" secondAttribute="trailing" constant="10" id="Rx6-dJ-lZV"/>
+                            <constraint firstItem="EwN-a9-8tK" firstAttribute="leading" secondItem="OsA-UA-iib" secondAttribute="leading" id="Vfb-p4-bDj"/>
+                            <constraint firstAttribute="trailing" secondItem="EwN-a9-8tK" secondAttribute="trailing" id="l0L-RZ-FAM"/>
+                            <constraint firstItem="iRU-VS-9NY" firstAttribute="top" secondItem="OsA-UA-iib" secondAttribute="topMargin" constant="20" id="qRU-d0-MJM"/>
+                            <constraint firstItem="X8s-4K-Aqa" firstAttribute="leading" secondItem="OsA-UA-iib" secondAttribute="leadingMargin" constant="10" id="rz1-b9-jbk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="EwN-a9-8tK" id="ogE-Rp-Qzd"/>
+                        <outlet property="textView" destination="X8s-4K-Aqa" id="SfB-9y-wdQ"/>
+                        <outlet property="titleAlUla" destination="iRU-VS-9NY" id="G2Y-qP-aCt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARI-d8-ksd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alula" width="660" height="440"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
