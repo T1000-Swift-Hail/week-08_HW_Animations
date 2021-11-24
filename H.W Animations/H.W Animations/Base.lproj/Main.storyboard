@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="H_W_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="D9D-Fx-Fza">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="fP7-Tg-80y"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Nature is the most beautiful sight on the whole body, especially when thinking about the Arabic language and its beauty." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-oG-GrT">
+                                <rect key="frame" x="20" y="333" width="374" height="136"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="4cL-qx-oSM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odT-dQ-gvm">
+                                <rect key="frame" x="35" y="234" width="96.5" height="66"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D9D-Fx-Fza" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0cA-zv-OBw"/>
+                            <constraint firstItem="D9D-Fx-Fza" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Jhw-dr-CeG"/>
+                            <constraint firstItem="D9D-Fx-Fza" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K5m-8p-WeO"/>
+                            <constraint firstItem="odT-dQ-gvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="KVW-Ri-56w"/>
+                            <constraint firstItem="WIs-oG-GrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O0w-W2-mSV"/>
+                            <constraint firstItem="odT-dQ-gvm" firstAttribute="top" secondItem="D9D-Fx-Fza" secondAttribute="bottom" constant="20" id="RCO-ub-b5A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WIs-oG-GrT" secondAttribute="trailing" constant="20" id="VQG-li-MT0"/>
+                            <constraint firstItem="WIs-oG-GrT" firstAttribute="top" secondItem="odT-dQ-gvm" secondAttribute="bottom" constant="33" id="cDE-Ax-OIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WIs-oG-GrT" secondAttribute="bottom" constant="393" id="flE-yo-9mh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImagevVew" destination="D9D-Fx-Fza" id="FTq-iM-a74"/>
+                        <outlet property="labelView" destination="odT-dQ-gvm" id="aIN-n3-sdX"/>
+                        <outlet property="textView" destination="WIs-oG-GrT" id="Mpd-v0-Vf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="201" height="251"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
