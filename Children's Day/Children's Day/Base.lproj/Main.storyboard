@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Children_s_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kids" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-2t-Ze9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="Gl3-3D-k1O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children's Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ji-nB-2Xd">
+                                <rect key="frame" x="20" y="331" width="219" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh4-Ea-UIZ">
+                                <rect key="frame" x="20" y="419" width="374" height="175.5"/>
+                                <string key="text">Children's Day is a commemorative date celebrated annually in honor of children, whose date of observance varies by country. In 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wh4-Ea-UIZ" firstAttribute="top" secondItem="6ji-nB-2Xd" secondAttribute="bottom" constant="47" id="4M0-y1-Ril"/>
+                            <constraint firstItem="wh4-Ea-UIZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="86N-g0-4K7"/>
+                            <constraint firstItem="CVq-2t-Ze9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OS8-RT-PJc"/>
+                            <constraint firstItem="CVq-2t-Ze9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ajf-dj-Sq3"/>
+                            <constraint firstItem="6ji-nB-2Xd" firstAttribute="top" secondItem="CVq-2t-Ze9" secondAttribute="bottom" constant="50" id="bkf-Gv-PHL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wh4-Ea-UIZ" secondAttribute="trailing" constant="20" id="mFt-bq-bLy"/>
+                            <constraint firstItem="CVq-2t-Ze9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tcI-oM-jda"/>
+                            <constraint firstItem="6ji-nB-2Xd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xGU-aJ-0Yt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="childTitle" destination="6ji-nB-2Xd" id="pgI-eg-r1o"/>
+                        <outlet property="imageView" destination="CVq-2t-Ze9" id="zdc-vL-YWt"/>
+                        <outlet property="textLable" destination="wh4-Ea-UIZ" id="4bJ-fL-SNW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kids" width="273" height="185"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
