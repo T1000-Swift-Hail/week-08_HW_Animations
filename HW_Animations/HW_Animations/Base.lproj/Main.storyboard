@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-Dx-NP9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="h41-KV-vV1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zealand Island" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-lj-u2V">
+                                <rect key="frame" x="20" y="339" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qg1-6l-wM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HY-Dx-BBw">
+                                <rect key="frame" x="20" y="420" width="374" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="zfG-sF-2lY"/>
+                                </constraints>
+                                <string key="text">Zealand is a large island that’s part of Denmark. It’s home to the capital, Copenhagen, and the city of Roskilde. Small towns and villages occupy the north, south and west coasts, which are popular holiday areas with sandy beaches and fjords. In the south, the towering white Møn’s Klint and Stevns Klint are fossil-rich cliffs with views of the Baltic Sea</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5HY-Dx-BBw" firstAttribute="top" secondItem="mVZ-lj-u2V" secondAttribute="bottom" constant="60" id="2Zq-fc-6PJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mVZ-lj-u2V" secondAttribute="trailing" constant="20" id="NiU-Qv-tYr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G0C-Dx-NP9" secondAttribute="trailing" id="OdV-AB-A67"/>
+                            <constraint firstItem="G0C-Dx-NP9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WDS-Nd-cbx"/>
+                            <constraint firstItem="G0C-Dx-NP9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fA0-0k-jyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5HY-Dx-BBw" secondAttribute="trailing" constant="20" id="fQr-9x-rHh"/>
+                            <constraint firstItem="5HY-Dx-BBw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iMn-sb-Zi2"/>
+                            <constraint firstItem="mVZ-lj-u2V" firstAttribute="top" secondItem="G0C-Dx-NP9" secondAttribute="bottom" constant="23" id="qbX-0W-1Z6"/>
+                            <constraint firstItem="mVZ-lj-u2V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ruY-YP-eZt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="describtion" destination="5HY-Dx-BBw" id="X7x-6l-49m"/>
+                        <outlet property="imageView" destination="G0C-Dx-NP9" id="0gr-bE-9j1"/>
+                        <outlet property="titleName" destination="mVZ-lj-u2V" id="CuL-Rp-qMe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
