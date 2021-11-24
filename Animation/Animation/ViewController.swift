@@ -23,9 +23,9 @@ class ViewController: UIViewController {
     }
     
     func labelImage(){
-        labelContery.transform = CGAffineTransform(translationX: -300, y: 0)
+        labelContery.transform = CGAffineTransform(translationX: -500, y: 0)
         labelContery.alpha = 0
-        labelDiscrition.transform = CGAffineTransform(translationX: -300, y: 0)
+        labelDiscrition.transform = CGAffineTransform(translationX: -500, y: 0)
         labelDiscrition.alpha = 0
         UIView.animate(withDuration: 1.5, delay: 0.5, options: .curveEaseInOut) { [self] in
             labelContery.transform = CGAffineTransform(translationX: 0, y: 0)
