@@ -57,31 +57,3 @@ class ViewController: UIViewController {
     }
     
 }
-   
-//fileprivate func Animations() {
-//    UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-//        self.imageView.transform = CGAffineTransform(rotationAngle: 120)
-//    } completion: { _ in
-//        UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseOut) {
-//            self.imageView.alpha = 0
-//        } completion: { _ in
-//
-//        }
-//    }
-//}
-
-//labelView2.transform = labelView2.transform.scaledBy(x: 0.5, y: 0.5)
-//let labelView22 = UIViewPropertyAnimator(duration: 1, curve:.easeInOut, animations: {
-//    self.labelView2.transform = self.labelView2.transform.scaledBy(x: 2, y: 2)
-//
-//})
-
-
-
-//imageView.transform = CGAffineTransform.init(translationX: -view.frame.width, y: 0)
-//imageView.transform = imageView.transform.rotated(by: -200)
-//imageView.transform.a = -view.frame.width
-//  UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseIn], animations: {
-//      self.imageView.transform = self.imageView.transform.rotated(by: 200)
-//
-//            })
