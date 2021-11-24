@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsH_W" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naturee" translatesAutoresizingMaskIntoConstraints="NO" id="Kax-cF-n5q">
+                                <rect key="frame" x="20" y="58" width="374" height="351"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="351" id="p5R-OM-RjA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life in The Countryside.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVf-wX-Hio">
+                                <rect key="frame" x="54" y="447" width="306" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="CPA-Vr-1hz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gTb-qV-e0F">
+                                <rect key="frame" x="20" y="527" width="374" height="222"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="GZ0-Sn-Ht3"/>
+                                    <constraint firstAttribute="width" constant="374" id="wDw-OP-SAX"/>
+                                </constraints>
+                                <string key="text">people living in villages breathe pure air. People living in villages are healthier, active, and simpler in habits than the people living in towns. The quiet and peace of village life give opportunities for thought, study, and mental development, which are impossible in town life</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OVf-wX-Hio" firstAttribute="centerX" secondItem="gTb-qV-e0F" secondAttribute="centerX" id="20u-Yq-Z6P"/>
+                            <constraint firstItem="Kax-cF-n5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="25g-wy-1eP"/>
+                            <constraint firstItem="gTb-qV-e0F" firstAttribute="top" secondItem="OVf-wX-Hio" secondAttribute="bottom" constant="21" id="3GV-X5-SH2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gTb-qV-e0F" secondAttribute="trailing" constant="20" id="G81-u5-mdM"/>
+                            <constraint firstItem="OVf-wX-Hio" firstAttribute="top" secondItem="Kax-cF-n5q" secondAttribute="bottom" constant="38" id="TnO-3z-Lzt"/>
+                            <constraint firstItem="OVf-wX-Hio" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="ZC0-b4-Iio"/>
+                            <constraint firstItem="OVf-wX-Hio" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="cfd-Df-zbJ"/>
+                            <constraint firstItem="gTb-qV-e0F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dbQ-8E-DYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kax-cF-n5q" secondAttribute="trailing" constant="20" id="jD0-h1-gsd"/>
+                            <constraint firstItem="gTb-qV-e0F" firstAttribute="top" secondItem="OVf-wX-Hio" secondAttribute="bottom" constant="21" id="lgV-rB-N2U"/>
+                            <constraint firstItem="Kax-cF-n5q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="tUf-ip-hhA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="Kax-cF-n5q" id="TeL-ye-imk"/>
+                        <outlet property="labelText" destination="OVf-wX-Hio" id="1pv-Us-GRZ"/>
+                        <outlet property="textView" destination="gTb-qV-e0F" id="QIf-Au-3vy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="naturee" width="1125" height="1165"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
