@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="ite-4A-6nN">
+                                <rect key="frame" x="0.0" y="74" width="414" height="234"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hideaway Beach Resort &amp; Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODM-Fy-NE6">
+                                <rect key="frame" x="20" y="390" width="296" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cXF-iB-jUf">
+                                <rect key="frame" x="20" y="459" width="374" height="247"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Welcome to an exclusive world for those who seek the ultimate in luxury and privacy. The Hideaway Beach Resort &amp; Spa is a tropical sanctuary of endless blue skies and fine white sand. It is one of the few resorts in Haa Alifu Atoll, and the Marina is the first of its kind in the Maldives. The island is large and crescent-shaped with a white, sandy beach which stretches more than 1km on each side of the island. The turquoise waters of the shallow lagoon are abundant in colourful sea life .</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cXF-iB-jUf" firstAttribute="top" secondItem="ODM-Fy-NE6" secondAttribute="bottom" constant="42" id="0Gx-90-mQG"/>
+                            <constraint firstItem="ODM-Fy-NE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0fJ-21-oEa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ite-4A-6nN" secondAttribute="trailing" id="31Y-96-Tjw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXF-iB-jUf" secondAttribute="trailing" constant="20" id="9Aa-Ry-lIy"/>
+                            <constraint firstItem="ite-4A-6nN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CPV-Qh-FhO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODM-Fy-NE6" secondAttribute="trailing" constant="98" id="RmV-a6-isT"/>
+                            <constraint firstItem="ite-4A-6nN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Sfa-BA-c8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ite-4A-6nN" secondAttribute="bottom" constant="554" id="bHa-GY-Vhx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cXF-iB-jUf" secondAttribute="bottom" constant="156" id="ga6-N4-2hs"/>
+                            <constraint firstItem="cXF-iB-jUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="im8-Oy-i7L"/>
+                            <constraint firstItem="ODM-Fy-NE6" firstAttribute="top" secondItem="ite-4A-6nN" secondAttribute="bottom" constant="82" id="rUP-og-YUA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ite-4A-6nN" id="lrg-s1-VDw"/>
+                        <outlet property="labelView" destination="ODM-Fy-NE6" id="5c6-Ja-LAj"/>
+                        <outlet property="textView" destination="cXF-iB-jUf" id="4i0-xr-BeD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download" width="300" height="168"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
