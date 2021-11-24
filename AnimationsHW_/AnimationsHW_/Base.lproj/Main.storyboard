@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsHW_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6426_zelenaya-milya_or_the-green-mile_1024x768_www-gdefon-ru_" translatesAutoresizingMaskIntoConstraints="NO" id="lTc-ZT-LZQ">
+                                <rect key="frame" x="10" y="59" width="394" height="327"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="327" id="bB7-ks-Qil"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE GREEN MILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E63-VH-cSe">
+                                <rect key="frame" x="65" y="406" width="284" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tn6-Ms-JFd">
+                                <rect key="frame" x="10" y="459" width="394" height="271"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="2Ao-q8-J1q"/>
+                                </constraints>
+                                <mutableString key="text">Green Mile is a movie adapted from a story about the lives of a few guards on duty in death row. The story leads up to the execution of a wrongly accused man that has a spiritual gift that permits him to perform extraordinary feats as he heals the wounded or sick. Paul is the main character in the story and his narrative leads the viewer through a narrative-a type of flash-back as he tells of his experience to his friend Elaine. Paul is in old age living at a retirement home many years after working as the head guard on Death Row at Cold Mountain Penitentiary in the State of Louisiana. Paul was a skeptical prison guard whose faith and sanity had deteriorated after many years of walking men down the “Green Mile” to their deaths by execution. </mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tn6-Ms-JFd" firstAttribute="top" secondItem="E63-VH-cSe" secondAttribute="bottom" constant="16" id="8or-Q4-GCE"/>
+                            <constraint firstItem="E63-VH-cSe" firstAttribute="top" secondItem="lTc-ZT-LZQ" secondAttribute="bottom" constant="20" id="NUR-j5-Gw0"/>
+                            <constraint firstItem="lTc-ZT-LZQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="PuZ-SI-Lne"/>
+                            <constraint firstItem="lTc-ZT-LZQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UhO-9u-QuI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lTc-ZT-LZQ" secondAttribute="trailing" constant="10" id="Yj1-rb-VK4"/>
+                            <constraint firstItem="E63-VH-cSe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="cBF-oh-h3q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E63-VH-cSe" secondAttribute="trailing" constant="65" id="dZ7-zJ-TkU"/>
+                            <constraint firstItem="tn6-Ms-JFd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="paH-Ep-0p4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tn6-Ms-JFd" secondAttribute="trailing" constant="10" id="smN-tq-Cj9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTitle" destination="E63-VH-cSe" id="rWg-DH-Ld7"/>
+                        <outlet property="movieImage" destination="lTc-ZT-LZQ" id="Sbh-3L-dKL"/>
+                        <outlet property="textMovie" destination="tn6-Ms-JFd" id="gkv-6J-4Sc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="6426_zelenaya-milya_or_the-green-mile_1024x768_www-gdefon-ru_" width="1024" height="768"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
