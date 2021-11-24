@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="1Aa-Xu-Z8Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="H7F-CX-6DS"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-hI-th8">
+                                <rect key="frame" x="20" y="266" width="374" height="173"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Programming is the process of writing instructions and directing commands to a computer or any other device such as DVD readers or audio and video receivers in communications systems.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programming " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qs-8V-8vj">
+                                <rect key="frame" x="30" y="222" width="186" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Aa-Xu-Z8Z" firstAttribute="centerX" secondItem="oCD-hI-th8" secondAttribute="centerX" id="6wq-Zm-PbL"/>
+                            <constraint firstItem="oCD-hI-th8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7g4-2N-g6U"/>
+                            <constraint firstItem="1qs-8V-8vj" firstAttribute="top" secondItem="1Aa-Xu-Z8Z" secondAttribute="bottom" constant="8" symbolic="YES" id="8lf-Sx-VDZ"/>
+                            <constraint firstItem="oCD-hI-th8" firstAttribute="top" secondItem="1qs-8V-8vj" secondAttribute="bottom" constant="7" id="HZd-ds-nOE"/>
+                            <constraint firstItem="1Aa-Xu-Z8Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qc6-rF-qLO"/>
+                            <constraint firstItem="1qs-8V-8vj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Vz7-cj-QQ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oCD-hI-th8" secondAttribute="bottom" constant="423" id="gNe-tY-4oH"/>
+                            <constraint firstItem="1Aa-Xu-Z8Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="neJ-pu-S2B"/>
+                            <constraint firstAttribute="trailing" secondItem="1Aa-Xu-Z8Z" secondAttribute="trailing" id="xA4-oJ-Jz1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1Aa-Xu-Z8Z" id="EDs-CQ-cvW"/>
+                        <outlet property="lableView" destination="1qs-8V-8vj" id="ehI-Bg-P7T"/>
+                        <outlet property="textView" destination="oCD-hI-th8" id="xVw-Jq-y4u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="505" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
