@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         //        imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
         imageView.alpha = 0
         
-        UIViewPropertyAnimator.runningPropertyAnimator(
+        let anmated = UIViewPropertyAnimator.runningPropertyAnimator(
             withDuration: 1.5, delay: 0.5, options: .curveEaseOut,
             animations: {
                 self.imageView.alpha = 1
@@ -57,6 +57,8 @@ class ViewController: UIViewController {
             },
             completion: nil
         )
+        
+        anmated.startAnimation()
     }
     
     
