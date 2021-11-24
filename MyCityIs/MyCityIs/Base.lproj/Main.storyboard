@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eli-vK-w9m">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="XHS-Yl-C1V" kind="embed" id="H21-4w-Xhp"/>
+                                </connections>
+                            </containerView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDg-3O-Ecv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Future Cities" id="9oG-Ms-Yfv"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eli-vK-w9m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A2w-B5-vXW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eli-vK-w9m" secondAttribute="bottom" id="bCg-Lx-Xsi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eli-vK-w9m" secondAttribute="trailing" id="z5l-h4-E3V"/>
+                            <constraint firstItem="eli-vK-w9m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zJd-Jr-1L3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TE3-45-u1K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1N5-Rd-hpu">
+            <objects>
+                <viewController id="XHS-Yl-C1V" customClass="ViewController" customModule="MyCityIs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qes-7S-eUG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="92" translatesAutoresizingMaskIntoConstraints="NO" id="Qbc-hS-8gj">
+                                <rect key="frame" x="12" y="177" width="374" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="aaH-3H-Ae5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYv-Lu-QEq">
+                                <rect key="frame" x="26" y="432.5" width="368" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="Mo5-B0-eyR"/>
+                                    <constraint firstAttribute="width" constant="368" id="dg6-0e-JXf"/>
+                                </constraints>
+                                <string key="text"> is an island in the southern Aegean Sea, about 200 km (120 mi) southeast from the Greek mainland. It is the largest island of a small, circular archipelago, which bears the same name and is the remnant of a volcanic caldera.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0012228724651337489" green="0.0" blue="0.54377700343276514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0c-Nk-Pju">
+                                <rect key="frame" x="134.5" y="652.5" width="151" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="CYv-d5-Mrf"/>
+                                    <constraint firstAttribute="height" constant="45" id="qR5-vZ-jlp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Santorini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-cY-auZ">
+                                <rect key="frame" x="12" y="83" width="236" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="t2v-uW-XG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g4I-er-w9j"/>
+                        <color key="backgroundColor" red="0.77743679810144672" green="0.82721090234803696" blue="0.99176316971730705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qYv-Lu-QEq" firstAttribute="top" secondItem="Qbc-hS-8gj" secondAttribute="bottom" constant="57" id="5mn-ZP-uXi"/>
+                            <constraint firstItem="qYv-Lu-QEq" firstAttribute="trailing" secondItem="Qbc-hS-8gj" secondAttribute="trailing" constant="8" id="9vn-zS-CIr"/>
+                            <constraint firstItem="EyH-cY-auZ" firstAttribute="top" secondItem="Qes-7S-eUG" secondAttribute="topMargin" constant="39" id="CHh-Rg-FuM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qbc-hS-8gj" secondAttribute="trailing" constant="8" id="E7B-TW-lTW"/>
+                            <constraint firstItem="Qbc-hS-8gj" firstAttribute="leading" secondItem="EyH-cY-auZ" secondAttribute="leading" id="ZGM-Zh-fMx"/>
+                            <constraint firstItem="EyH-cY-auZ" firstAttribute="leading" secondItem="Qes-7S-eUG" secondAttribute="leadingMargin" constant="-8" id="fMU-wd-Dhr"/>
+                            <constraint firstItem="E0c-Nk-Pju" firstAttribute="top" secondItem="qYv-Lu-QEq" secondAttribute="bottom" constant="71" id="kkN-TI-XdW"/>
+                            <constraint firstItem="E0c-Nk-Pju" firstAttribute="centerX" secondItem="qYv-Lu-QEq" secondAttribute="centerX" id="wfq-kO-adY"/>
+                            <constraint firstItem="Qbc-hS-8gj" firstAttribute="top" secondItem="EyH-cY-auZ" secondAttribute="bottom" constant="57.5" id="ylr-sO-dzp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Qbc-hS-8gj" id="xXq-TJ-9E7"/>
+                        <outlet property="santoriniLbl" destination="qYv-Lu-QEq" id="wNV-it-zlI"/>
+                        <outlet property="titelSantorini" destination="EyH-cY-auZ" id="E0X-i9-XN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82S-xu-dxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742.0289855072465" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="92" width="686" height="386"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
