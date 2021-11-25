@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="X2g-sR-VX0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="TWk-gN-9be">
+                                        <rect key="frame" x="8" y="44" width="406" height="248"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="248" id="dcW-bJ-j7e"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p2h-kV-PWj">
+                                        <rect key="frame" x="39" y="447" width="336" height="175"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="hty-MU-nga"/>
+                                        </constraints>
+                                        <string key="text">Autumn is the third of the four seasons that visit us in one year, and autumn is an attractive charm that attracts everyone around it, as plants and trees take off their beautiful mellow green dress and wear yellow, red or orange clothes. In this season of the year, day and night are equal, and rain falls in harmony with the sun’s rays, and they come together.</string>
+                                        <color key="textColor" red="0.59146148990000003" green="0.2796890266" blue="0.58239155529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The autumn season..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffo-Dd-pIy" userLabel="The autumn Season">
+                                        <rect key="frame" x="8" y="352" width="318" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" red="0.71174636989999995" green="0.3365690798" blue="0.70083189260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="OBL-jK-7eg"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ffo-Dd-pIy" firstAttribute="leading" secondItem="OBL-jK-7eg" secondAttribute="leading" constant="8" id="06G-GZ-OmP"/>
+                                    <constraint firstItem="OBL-jK-7eg" firstAttribute="bottom" secondItem="p2h-kV-PWj" secondAttribute="bottom" constant="240" id="0RA-3D-f3x"/>
+                                    <constraint firstItem="p2h-kV-PWj" firstAttribute="leading" secondItem="OBL-jK-7eg" secondAttribute="leading" constant="39" id="2so-Gx-aCd"/>
+                                    <constraint firstItem="TWk-gN-9be" firstAttribute="leading" secondItem="ffo-Dd-pIy" secondAttribute="leading" id="5B9-mv-493"/>
+                                    <constraint firstItem="p2h-kV-PWj" firstAttribute="top" secondItem="ffo-Dd-pIy" secondAttribute="bottom" constant="62" id="9dG-Ks-G3N"/>
+                                    <constraint firstItem="ffo-Dd-pIy" firstAttribute="top" secondItem="TWk-gN-9be" secondAttribute="bottom" constant="60" id="GE1-XZ-JJO"/>
+                                    <constraint firstItem="p2h-kV-PWj" firstAttribute="centerX" secondItem="X2g-sR-VX0" secondAttribute="centerX" id="aH7-Gy-beB"/>
+                                    <constraint firstItem="TWk-gN-9be" firstAttribute="trailing" secondItem="OBL-jK-7eg" secondAttribute="trailing" id="fE3-mT-RZT"/>
+                                    <constraint firstItem="OBL-jK-7eg" firstAttribute="trailing" secondItem="ffo-Dd-pIy" secondAttribute="trailing" constant="88" id="j7Z-VX-mJt"/>
+                                    <constraint firstItem="TWk-gN-9be" firstAttribute="top" secondItem="OBL-jK-7eg" secondAttribute="top" id="qB9-gp-iJY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageSeason" destination="TWk-gN-9be" id="xOT-us-e7J"/>
+                        <outlet property="theAutumn" destination="p2h-kV-PWj" id="1iG-SC-GBg"/>
+                        <outlet property="theAutumnSeason" destination="ffo-Dd-pIy" id="iEr-36-Lbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
