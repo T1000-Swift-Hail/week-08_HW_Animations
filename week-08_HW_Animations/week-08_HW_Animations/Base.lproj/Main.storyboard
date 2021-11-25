@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="week_08_HW_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neom" translatesAutoresizingMaskIntoConstraints="NO" id="RJq-oP-RFD" customClass="CustomControl">
+                                <rect key="frame" x="0.0" y="-7" width="414" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="Du7-Jm-Kxq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzI-IV-6Oi">
+                                <rect key="frame" x="20" y="435" width="374" height="372"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="sO4-a0-Hvr"/>
+                                </constraints>
+                                <string key="text">Neom, Hejazi pronunciation:  is a planned cross-border city in the Tabuk Province of northwestern Saudi Arabia. It is planned to incorporate smart city technologies and also function as a tourist destination. The site is north of the Red Sea, east of Egypt across the Strait of Tiran, and south of Israel and Jordan.It will cover a total area of 26,500 km2 (10,200 sq mi) and will extend 460 km along the coast of the Red Sea.
+</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3I7-Zd-IT1">
+                                <rect key="frame" x="55" y="361" width="304" height="66"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="41"/>
+                                <color key="textColor" red="0.89244765039999996" green="0.0069783953949999998" blue="0.22863346339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3I7-Zd-IT1" secondAttribute="trailing" constant="55" id="7TW-hR-946"/>
+                            <constraint firstItem="ZzI-IV-6Oi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EEN-xh-xbF"/>
+                            <constraint firstItem="3I7-Zd-IT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="GWT-ZH-4Fq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RJq-oP-RFD" secondAttribute="trailing" id="UaK-zy-vgf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZzI-IV-6Oi" secondAttribute="bottom" constant="55" id="Whm-o7-reK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZzI-IV-6Oi" secondAttribute="trailing" constant="20" id="cDb-FY-0JS"/>
+                            <constraint firstItem="RJq-oP-RFD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jWI-Y0-bqM"/>
+                            <constraint firstItem="RJq-oP-RFD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-51" id="ss2-gA-rTa"/>
+                            <constraint firstItem="ZzI-IV-6Oi" firstAttribute="top" secondItem="3I7-Zd-IT1" secondAttribute="bottom" constant="8" id="uup-zO-hmX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="RJq-oP-RFD" id="Z8b-XJ-voD"/>
+                        <outlet property="labelNeom" destination="3I7-Zd-IT1" id="yXG-7r-HMP"/>
+                        <outlet property="labelTextNeom" destination="ZzI-IV-6Oi" id="McD-7K-j7x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="neom" width="594" height="429"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
