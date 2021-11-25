@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children's Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="M6M-D9-j6K">
+                                <rect key="frame" x="20" y="341" width="98" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMi-b2-lGw">
+                                <rect key="frame" x="20" y="423" width="374" height="349"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Universal Children's Day was declared in 1954 as a global occasion to be observed on 20 November each year to promote international interdependence, raise awareness among the world's children and improve their well-being.The date of November 20 is important because the UN General Assembly adopted the Declaration of the Rights of the Child Since 1990, Universal Children's Day has been celebrated as the anniversary of the date of the adoption by the United Nations General Assembly of the Declaration of the Rights of the Child and its related convention.International Children's Day provides each of us with an inspiring springboard to defend, promote and celebrate children's rights, and translate them into debates and actions to build a better world for children...</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Children's " translatesAutoresizingMaskIntoConstraints="NO" id="gH4-DU-bIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="VPz-09-AYX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M6M-D9-j6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="546-ym-Gd5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M6M-D9-j6K" secondAttribute="trailing" constant="296" id="Hsp-YB-hJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMi-b2-lGw" secondAttribute="trailing" constant="20" id="JEy-8u-hnr"/>
+                            <constraint firstItem="eMi-b2-lGw" firstAttribute="top" secondItem="M6M-D9-j6K" secondAttribute="bottom" constant="53" id="Pva-D2-HTa"/>
+                            <constraint firstItem="gH4-DU-bIJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="TN2-zq-z8y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gH4-DU-bIJ" secondAttribute="trailing" id="hxx-DV-Y2D"/>
+                            <constraint firstItem="M6M-D9-j6K" firstAttribute="top" secondItem="gH4-DU-bIJ" secondAttribute="bottom" constant="36" id="mk5-KV-dqq"/>
+                            <constraint firstItem="eMi-b2-lGw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tzo-95-n7Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eMi-b2-lGw" secondAttribute="bottom" constant="90" id="uPK-1Q-j2n"/>
+                            <constraint firstItem="gH4-DU-bIJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wDL-1L-zeX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gH4-DU-bIJ" id="RKX-ox-HPA"/>
+                        <outlet property="lableView" destination="M6M-D9-j6K" id="ymS-wm-CuX"/>
+                        <outlet property="textView" destination="eMi-b2-lGw" id="OMM-LK-bQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Children's " width="273" height="185"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
