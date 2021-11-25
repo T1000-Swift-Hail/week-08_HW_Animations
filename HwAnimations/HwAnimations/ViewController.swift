@@ -41,7 +41,6 @@ func titelAnimation () {
     let thetitel = titel.transform
     titel.transform = CGAffineTransform.init(translationX: -view.frame.width, y: 0)
     UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseIn], animations: {
-        self.titel.transform = CGAffineTransform.init(scaleX: 0, y: 0)
         self.titel.transform = thetitel
     })
     }
@@ -49,7 +48,6 @@ func textLableAnimation () {
     let thetextLable = textLable.transform
     textLable.transform = CGAffineTransform.init(translationX: -view.frame.width, y: 0)
     UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseIn], animations: {
-        self.textLable.transform = CGAffineTransform.init(scaleX: 0, y: 0)
         self.textLable.transform = thetextLable
     })
     }
