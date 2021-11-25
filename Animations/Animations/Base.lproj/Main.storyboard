@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="خليفية فخمه للاعبين الهلال " translatesAutoresizingMaskIntoConstraints="NO" id="5fe-ad-VYw">
+                                <rect key="frame" x="20" y="44" width="374" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="F5O-jt-yah"/>
+                                    <constraint firstAttribute="height" constant="224" id="MLe-yc-KS5"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qDV-Bz-rl1">
+                                <rect key="frame" x="20" y="354" width="333" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Al Hilal Saudi Club achieves a new record as the highest Asian team to achieve continental proximity, as it achieved this title for the fourth time after the new name of the Asian Champions League</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The world is hard, strong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-LK-e52">
+                                <rect key="frame" x="20" y="295" width="209.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5fe-ad-VYw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G2G-Ze-wf2"/>
+                            <constraint firstItem="5fe-ad-VYw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KcP-aS-glM"/>
+                            <constraint firstItem="MAu-LK-e52" firstAttribute="top" secondItem="5fe-ad-VYw" secondAttribute="bottom" constant="27" id="YJi-LK-4Hf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5fe-ad-VYw" secondAttribute="trailing" constant="20" id="lmM-BR-b7q"/>
+                            <constraint firstItem="MAu-LK-e52" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vnG-ON-EXD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="5fe-ad-VYw" id="upn-uH-JSl"/>
+                        <outlet property="textView" destination="qDV-Bz-rl1" id="1fc-WP-mSX"/>
+                        <outlet property="titleLable" destination="MAu-LK-e52" id="Oi9-bl-AHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="خليفية فخمه للاعبين الهلال " width="265" height="190"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
